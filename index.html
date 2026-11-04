@@ -30,7 +30,7 @@
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
-    img { max-width: 100%; display: block; }
+    img { max-width: 100%; display: block; object-fit: cover; }
     a { color: inherit; text-decoration: none; }
     .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 
@@ -74,7 +74,7 @@
       aspect-ratio: 4/5; border-radius: 8px; overflow: hidden;
       box-shadow: 0 30px 60px -20px rgba(0,0,0,0.25);
     }
-    .hero-img img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-img img { width: 100%; height: 100%; }
 
     /* ===== Sección de tipos de sesión ===== */
     section { padding: 80px 0; }
@@ -99,7 +99,7 @@
     }
     .session-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px -15px rgba(0,0,0,0.18); }
     .session-card figure { aspect-ratio: 4/3; overflow: hidden; }
-    .session-card img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+    .session-card img { width: 100%; height: 100%; transition: transform .6s ease; }
     .session-card:hover img { transform: scale(1.05); }
     .session-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
     .session-body h3 { font-family: var(--serif); font-size: 22px; margin-bottom: 8px; }
@@ -117,7 +117,7 @@
       max-width: var(--max); margin: 0 auto; padding: 0 24px;
     }
     .about-img { aspect-ratio: 4/5; border-radius: 8px; overflow: hidden; }
-    .about-img img { width: 100%; height: 100%; object-fit: cover; }
+    .about-img img { width: 100%; height: 100%; }
     .about h2 { font-family: var(--serif); font-size: 36px; margin-bottom: 20px; }
     .about p { color: var(--muted); margin-bottom: 16px; }
 
@@ -196,8 +196,8 @@
       </div>
     </div>
     <div class="hero-img">
-      <!-- Reemplaza esta URL por tu propia foto cuando la tengas -->
-      <img src="https://picsum.photos/seed/hero/800/1000" alt="Retrato de muestra" fetchpriority="high" />
+      <!-- ATENCIÓN: Sube tu foto a GitHub con el nombre 'portada.jpg' -->
+      <img src="portada.jpg" alt="Portada Augusto Ribeiro" fetchpriority="high" />
     </div>
   </section>
 
@@ -209,10 +209,10 @@
       <p>Cada sesión está diseñada a medida. Toca una para ver galería completa, detalles y disponibilidad.</p>
     </div>
     <div class="grid-sessions">
-      <!-- Tarjeta 1 -->
+      <!-- Tarjeta 1: Sube tu foto como 'retrato.jpg' -->
       <article class="session-card">
         <figure>
-          <img src="https://picsum.photos/seed/retrato/600/450" alt="Sesión de retrato" loading="lazy" />
+          <img src="retrato.jpg" alt="Sesión de retrato" loading="lazy" />
         </figure>
         <div class="session-body">
           <h3>Retrato</h3>
@@ -224,10 +224,10 @@
         </div>
       </article>
 
-      <!-- Tarjeta 2 -->
+      <!-- Tarjeta 2: Sube tu foto como 'familia.jpg' -->
       <article class="session-card">
         <figure>
-          <img src="https://picsum.photos/seed/familia/600/450" alt="Sesión de familia" loading="lazy" />
+          <img src="familia.jpg" alt="Sesión de familia" loading="lazy" />
         </figure>
         <div class="session-body">
           <h3>Familia</h3>
@@ -239,10 +239,10 @@
         </div>
       </article>
 
-      <!-- Tarjeta 3 -->
+      <!-- Tarjeta 3: Sube tu foto como 'boda.jpg' -->
       <article class="session-card">
         <figure>
-          <img src="https://picsum.photos/seed/boda/600/450" alt="Sesión de boda" loading="lazy" />
+          <img src="boda.jpg" alt="Sesión de boda" loading="lazy" />
         </figure>
         <div class="session-body">
           <h3>Bodas</h3>
@@ -254,10 +254,10 @@
         </div>
       </article>
 
-      <!-- Tarjeta 4 -->
+      <!-- Tarjeta 4: Sube tu foto como 'newborn.jpg' -->
       <article class="session-card">
         <figure>
-          <img src="https://picsum.photos/seed/newborn/600/450" alt="Sesión newborn" loading="lazy" />
+          <img src="newborn.jpg" alt="Sesión newborn" loading="lazy" />
         </figure>
         <div class="session-body">
           <h3>Newborn</h3>
@@ -275,7 +275,8 @@
   <section id="sobre-mi">
     <div class="about">
       <div class="about-img">
-        <img src="https://picsum.photos/seed/yo/700/900" alt="Augusto Ribeiro" loading="lazy" />
+        <!-- Sube tu foto como 'sobre-mi.jpg' -->
+        <img src="sobre-mi.jpg" alt="Augusto Ribeiro" loading="lazy" />
       </div>
       <div>
         <p class="eyebrow">Detrás de la cámara</p>
