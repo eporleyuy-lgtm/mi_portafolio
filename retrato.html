@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retrato | Augusto Ribeiro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #faf7f2; --ink: #1f1f1f; --muted: #6b6b6b;
+      --accent: #b8894b; --line: #e6dfd4;
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "Inter", system-ui, sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: var(--sans); background: var(--bg); color: var(--ink); line-height: 1.6; }
+    img { max-width: 100%; display: block; object-fit: cover; object-position: center; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Navegación simple para volver */
+    header { padding: 24px; text-align: center; border-bottom: 1px solid var(--line); }
+    .logo { font-family: var(--serif); font-size: 22px; font-weight: 700; }
+    .back-link { display: inline-block; margin-top: 10px; font-size: 14px; color: var(--accent); }
+    .back-link:hover { text-decoration: underline; }
+
+    /* Cabecera de la sesión */
+    .hero-session { text-align: center; padding: 60px 24px; max-width: 700px; margin: 0 auto; }
+    .hero-session h1 { font-family: var(--serif); font-size: clamp(32px, 5vw, 48px); margin-bottom: 16px; }
+    .hero-session p { color: var(--muted); font-size: 18px; }
+
+    /* Galería de fotos */
+    .gallery-container { max-width: 1000px; margin: 0 auto; padding: 0 24px 80px; }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      aspect-ratio: 4/5; /* Hace que todas las fotos tengan la misma proporción vertical */
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: var(--line);
+    }
+    .gallery-grid img:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px -10px rgba(0,0,0,0.2);
+    }
+
+    /* Botón de reserva */
+    .cta-section { text-align: center; padding: 60px 24px; background: #fff; border-top: 1px solid var(--line); }
+    .cta-section h2 { font-family: var(--serif); font-size: 28px; margin-bottom: 20px; }
+    .btn { display: inline-block; padding: 14px 32px; border-radius: 999px; background: var(--ink); color: #fff; font-weight: 500; transition: background 0.2s; }
+    .btn:hover { background: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Augusto Ribeiro</div>
+    <a href="index.html" class="back-link">← Volver al inicio</a>
+  </header>
+
+  <section class="hero-session">
+    <h1>Sesión de Retrato</h1>
+    <p>Para ti, para tu marca personal o para ese momento en el que quieres verte y sentirte increíble. Sesiones en exterior con luz natural o en estudio.</p>
+  </section>
+
+  <section class="gallery-container">
+    <div class="gallery-grid">
+      <!-- Aquí van tus fotos. Asegúrate de subirlas a GitHub con estos nombres -->
+      <img src="retrato-1.jpg" alt="Foto de retrato 1" loading="lazy" />
+      <img src="retrato-2.jpg" alt="Foto de retrato 2" loading="lazy" />
+      <img src="retrato-3.jpg" alt="Foto de retrato 3" loading="lazy" />
+      <img src="retrato-4.jpg" alt="Foto de retrato 4" loading="lazy" />
+      <img src="retrato-5.jpg" alt="Foto de retrato 5" loading="lazy" />
+      <img src="retrato-6.jpg" alt="Foto de retrato 6" loading="lazy" />
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>¿Te gustaría una sesión así?</h2>
+    <a href="index.html#contacto" class="btn">Consultar disponibilidad</a>
+  </section>
+
+</body>
+</html>
