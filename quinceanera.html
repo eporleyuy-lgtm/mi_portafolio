@@ -37,7 +37,7 @@
     }
     .gallery-grid img {
       width: 100%;
-      aspect-ratio: 4/5; /* Hace que todas las fotos tengan la misma proporción vertical */
+      aspect-ratio: 4/5; 
       border-radius: 8px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       background-color: var(--line);
@@ -68,13 +68,25 @@
 
   <section class="gallery-container">
     <div class="gallery-grid">
-      <!-- Sube tus fotos a GitHub con estos nombres exactos -->
+      
+      <!-- Foto 1: Normal -->
       <img src="quinceanera-1.jpg" alt="Foto de quinceañera 1" loading="lazy" />
-      <img src="quinceanera-2.jpg" alt="Foto de quinceañera 2" loading="lazy" />
-      <img src="quinceanera-3.jpg" alt="Foto de quinceañera 3" loading="lazy" />
+      
+      <!-- Foto 2: Desplazada a la derecha para enfocar a la pareja -->
+      <img src="quinceanera-2.jpg" alt="Foto de quinceañera 2" loading="lazy" style="object-position: right center;" />
+      
+      <!-- Foto 3: Desplazada a la derecha para centrar a la chica -->
+      <img src="quinceanera-3.jpg" alt="Foto de quinceañera 3" loading="lazy" style="object-position: right center;" />
+      
+      <!-- Foto 4: Normal -->
       <img src="quinceanera-4.jpg" alt="Foto de quinceañera 4" loading="lazy" />
-      <img src="quinceanera-5.jpg" alt="Foto de quinceañera 5" loading="lazy" />
+      
+      <!-- Foto 5: Desplazada a la derecha para enfocar a la chica sentada -->
+      <img src="quinceanera-5.jpg" alt="Foto de quinceañera 5" loading="lazy" style="object-position: right center;" />
+      
+      <!-- Foto 6: Normal -->
       <img src="quinceanera-6.jpg" alt="Foto de quinceañera 6" loading="lazy" />
+
     </div>
   </section>
 
