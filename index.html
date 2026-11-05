@@ -230,7 +230,7 @@
         </div>
       </article>
 
-      <!-- Tarjeta 2: Exteriores (Antes Familia) -->
+      <!-- Tarjeta 2: Exteriores -->
       <article class="session-card">
         <figure>
           <img src="exteriores.jpg" alt="Sesión en exteriores" loading="lazy" />
@@ -307,19 +307,26 @@
       <h2>Cuéntame qué tienes en mente</h2>
       <p>Rellena el formulario y te responderé en menos de 24 horas con disponibilidad y detalles.</p>
     </div>
-    <!-- Sustituye YOUR_FORM_ID por el ID que te dé Formspree (gratis) -->
+    
+    <!-- Formulario conectado a Formspree -->
     <form class="contact-form" action="https://formspree.io/f/xkjjezpp" method="POST">
+      
       <div class="form-row">
         <div class="form-group">
           <label for="nombre">Nombre</label>
           <input type="text" id="nombre" name="nombre" required />
         </div>
         <div class="form-group">
+          <label for="telefono">Teléfono / WhatsApp (opcional)</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="+54 9 11..." />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required />
         </div>
-      </div>
-      <div class="form-row">
         <div class="form-group">
           <label for="tipo">Tipo de sesión</label>
           <select id="tipo" name="tipo" required>
@@ -331,15 +338,20 @@
             <option>Otro</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="fecha">Fecha aproximada</label>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group" style="grid-column: span 2;">
+          <label for="fecha">Fecha aproximada (opcional)</label>
           <input type="date" id="fecha" name="fecha" />
         </div>
       </div>
+
       <div class="form-group" style="margin-bottom: 16px;">
         <label for="mensaje">Cuéntame más</label>
-        <textarea id="mensaje" name="mensaje" placeholder="Ciudad, número de personas, referencias visuales…"></textarea>
+        <textarea id="mensaje" name="mensaje" placeholder="Ciudad, número de personas, ideas o referencias visuales…"></textarea>
       </div>
+      
       <button type="submit" class="btn btn-primary form-submit">Enviar consulta</button>
     </form>
   </section>
