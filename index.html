@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Augusto Ribeiro | Fotografía</title>
-  <meta name="description" content="Sesiones de fotografía de retrato, familia, bodas y quinceañeras. Reserva tu sesión hoy con Augusto Ribeiro." />
+  <meta name="description" content="Sesiones de fotografía de retrato, exteriores, bodas y quinceañeras. Reserva tu sesión hoy con Augusto Ribeiro." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -30,15 +30,7 @@
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
-    
-    /* MEJORA: Fuerza a que todas las imágenes se centren y cubran su espacio */
-    img { 
-      max-width: 100%; 
-      display: block; 
-      object-fit: cover; 
-      object-position: center; 
-    }
-    
+    img { max-width: 100%; display: block; object-fit: cover; object-position: center; }
     a { color: inherit; text-decoration: none; }
     .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 
@@ -81,7 +73,7 @@
     .hero-img {
       aspect-ratio: 4/5; border-radius: 8px; overflow: hidden;
       box-shadow: 0 30px 60px -20px rgba(0,0,0,0.25);
-      background-color: var(--line); /* Fondo por si la foto tarda en cargar */
+      background-color: var(--line);
     }
     .hero-img img { width: 100%; height: 100%; }
 
@@ -107,15 +99,12 @@
       display: flex; flex-direction: column;
     }
     .session-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px -15px rgba(0,0,0,0.18); }
-    
-    /* MEJORA: Marco de foto con fondo gris para evitar textos rotos */
     .session-card figure { 
       aspect-ratio: 4/3; 
       overflow: hidden; 
       background-color: var(--line);
       width: 100%;
     }
-    
     .session-card img { width: 100%; height: 100%; transition: transform .6s ease; }
     .session-card:hover img { transform: scale(1.05); }
     .session-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
@@ -206,7 +195,7 @@
     <div>
       <p class="eyebrow">Fotografía en tu ciudad</p>
       <h1>Momentos que se sienten, <em>imágenes que perduran.</em></h1>
-      <p>Sesiones de retrato, familia, bodas y quinceañeras. Cada imagen cuenta tu historia con luz natural, calidez y autenticidad.</p>
+      <p>Sesiones de retrato, exteriores, bodas y quinceañeras. Cada imagen cuenta tu historia con luz natural, calidez y autenticidad.</p>
       <div class="hero-cta">
         <a href="#sesiones" class="btn btn-primary">Ver sesiones</a>
         <a href="#contacto" class="btn btn-outline">Consultar disponibilidad</a>
@@ -225,7 +214,8 @@
       <p>Cada sesión está diseñada a medida. Toca una para ver galería completa, detalles y disponibilidad.</p>
     </div>
     <div class="grid-sessions">
-      <!-- Tarjeta 1 -->
+      
+      <!-- Tarjeta 1: Retrato -->
       <article class="session-card">
         <figure>
           <img src="retrato.jpg" alt="Sesión de retrato" loading="lazy" style="object-position: center 20%;" />
@@ -240,22 +230,22 @@
         </div>
       </article>
 
-      <!-- Tarjeta 2 -->
+      <!-- Tarjeta 2: Exteriores (Antes Familia) -->
       <article class="session-card">
         <figure>
-         <img src="familia.jpg" alt="Sesión de familia" loading="lazy" style="object-position: center 30%;" />
+          <img src="exteriores.jpg" alt="Sesión en exteriores" loading="lazy" />
         </figure>
         <div class="session-body">
-          <h3>Familia</h3>
-          <p>Sesiones relajadas y divertidas, en exterior o en casa, para capturar la esencia de tu familia.</p>
+          <h3>Exteriores</h3>
+          <p>Sesiones en plena naturaleza, parques o ciudades. Aprovechamos la luz natural para crear imágenes llenas de vida.</p>
           <div class="session-meta">
             <span class="price">Desde $X</span>
-            <span class="arrow">Ver →</span>
+            <a href="exteriores.html" class="arrow">Ver →</a>
           </div>
         </div>
       </article>
 
-      <!-- Tarjeta 3 -->
+      <!-- Tarjeta 3: Bodas -->
       <article class="session-card">
         <figure>
           <img src="boda.jpg" alt="Sesión de boda" loading="lazy" />
@@ -265,12 +255,12 @@
           <p>Cobertura documental y emotiva de tu gran día. Desde los preparativos hasta el último baile.</p>
           <div class="session-meta">
             <span class="price">Desde $X</span>
-            <span class="arrow">Ver →</span>
+            <a href="bodas.html" class="arrow">Ver →</a>
           </div>
         </div>
       </article>
 
-      <!-- Tarjeta 4: QUINCEAÑOS -->
+      <!-- Tarjeta 4: Quinceaños -->
       <article class="session-card">
         <figure>
           <img src="quinceanera.jpg" alt="Sesión de quinceañera" loading="lazy" />
@@ -280,10 +270,11 @@
           <p>Una sesión mágica para celebrar tus 15. Capturamos tu esencia, tu vestido y la emoción de esta etapa inolvidable.</p>
           <div class="session-meta">
             <span class="price">Desde $X</span>
-            <span class="arrow">Ver →</span>
+            <a href="quinceanera.html" class="arrow">Ver →</a>
           </div>
         </div>
       </article>
+
     </div>
   </section>
 
@@ -291,7 +282,7 @@
   <section id="sobre-mi">
     <div class="about">
       <div class="about-img">
-        <img src="sobre-mi.jpeg" alt="Augusto Ribeiro" loading="lazy" />
+        <img src="sobre-mi.jpg" alt="Augusto Ribeiro" loading="lazy" />
       </div>
       <div>
         <p class="eyebrow">Detrás de la cámara</p>
@@ -306,7 +297,7 @@
   <!-- ===== TESTIMONIO ===== -->
   <section class="quote-section">
     <blockquote>“Superó todas mis expectativas. Las fotos son preciosas, pero sobre todo me sentí acompañada en todo momento.”</blockquote>
-    <cite>— CLIENTE · SESIÓN DE FAMILIA</cite>
+    <cite>— CLIENTE · SESIÓN DE EXTERIORES</cite>
   </section>
 
   <!-- ===== CONTACTO ===== -->
@@ -334,7 +325,7 @@
           <select id="tipo" name="tipo" required>
             <option value="">Selecciona…</option>
             <option>Retrato</option>
-            <option>Familia</option>
+            <option>Exteriores</option>
             <option>Boda</option>
             <option>Quinceaños</option>
             <option>Otro</option>
